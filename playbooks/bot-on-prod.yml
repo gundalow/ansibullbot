@@ -1,18 +1,18 @@
-- name: Stop dev bot
-  hosts: ansibullbot-dev
-  become: yes
-
-  tasks:
-    - name: DEV | Stop ansibullbot services
-      service:
-        name: "{{ item }}"
-        state: stopped
-      loop:
-        - ansibullbot
-        - ansibullbot-receiver
+#- name: Stop dev bot
+#  hosts: ansibullbot-dev
+#  become: yes
+#
+#  tasks:
+#    - name: DEV | Stop ansibullbot services
+#      service:
+#        name: "{{ item }}"
+#        state: stopped
+#      loop:
+#        - ansibullbot
+#        - ansibullbot-receiver
 
 - name: Start prod bot
-  hosts: ansibullbot.eng.ansible.com
+  hosts: ansibullbot-com.eng.ansible.com
   become: yes
 
   tasks:

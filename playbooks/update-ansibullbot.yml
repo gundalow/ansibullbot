@@ -1,5 +1,5 @@
 - name: Update Ansibullbot
-  hosts: ansibullbot
+  hosts: ansibullbot-com.eng.ansible.com
   become: yes
 
   roles:
